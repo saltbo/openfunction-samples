@@ -15,5 +15,5 @@ func init() {
 
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
 	vars := ofctx.VarsFromCtx(r.Context())
-	fmt.Fprintf(w, "Hello, %s!\n", vars["greeting"])
+	fmt.Fprintf(w, "Hello, 1%s!\n", vars["greeting"])
 }
